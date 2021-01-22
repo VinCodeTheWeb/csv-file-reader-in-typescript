@@ -1,8 +1,7 @@
-import { CsvFileReader } from './CsvFileReader' 
-import { dateStringToDate } from './utils';
+import { MatchReader } from './inheritence/MatchReader'
 import { MatchResult } from './matchResult';
 
-const reader = new CsvFileReader('football.csv');
+const reader = new MatchReader('football.csv');
 reader.read();
 
 let manUnitedWins = 0;
